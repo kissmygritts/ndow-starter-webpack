@@ -12,8 +12,10 @@
 <script>
 {{#unless router}}
 import HelloWorld from './components/HelloWorld'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-
 {{/unless}}
+import 'font-awesome/css/font-awesome.css'
+import 'bulma/css/bulma.css'
+
 export default {
   name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
   components: {
